@@ -4,15 +4,16 @@ const Currency = () => {
     const { currency } = useContext(AppContext);
     const [getCurrency, setCurrency] = useState(currency)
     
-    
     return (
-        <div className='alert alert-primary'>
-            <select value={getCurrency} onChange={onSelectChange} >
-                <option value="£">£ Pound</option>
-                <option value="$">$ Dollar</option>
-                <option value="€">€ Euro</option>
-                <option value="₹">₹ Ruppee</option>
-            </select>
+        <div>
+            <label>Currency (
+                <select className= "MuiOutlinedInput-notchedOutline" value={getCurrency} onChange={onSelectChange} >
+                    <option value="£">£ Pound</option>
+                    <option value="$">$ Dollar</option>
+                    <option value="€">€ Euro</option>
+                    <option value="₹">₹ Ruppee</option>
+                </select>
+            ) </label>
         </div>
     );
 
