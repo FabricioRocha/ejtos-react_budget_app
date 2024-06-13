@@ -40,3 +40,9 @@
 .MuiOutlinedInput-notchedOutline {
     border: none ! important ;
   }
+
+.btnInc {
+    border-radius: 8px;
+    color: white;
+    background-color: green;
+}
